@@ -1,0 +1,66 @@
+http://test/api/subjects
+Accept: application/json
+
+###
+http://test/api/subjects/1
+Accept: application/json
+
+###
+
+POST http://test/api/subjects
+Content-Type: application/json
+Authorization: Bearer u88iAAb99Rqxopemr6U90Ntp01owZXOxdJM0NrBmgihwrukUU9O1TAjKngUG
+
+{
+    "name": "Fourth  subject",
+    "content": {
+        "item1": {
+          "something about": "afaf"
+        },
+        "item2": "something second"
+    }
+
+
+
+}
+
+###
+
+PUT http://test/api/subjects/2
+Content-Type: application/json
+
+{
+    "name": "Second subject (updated)"
+}
+
+###
+
+DELETE http://test/api/subjects/5
+
+###
+
+http://test/api/subjects/search/sub
+Accept: application/json
+
+###
+
+POST http://test/api/register
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "beksbeeks03@gmail.com",
+    "password": "password",
+    "password_confirmation": "password"
+}
+
+###
+
+POST http://test/api/login
+Content-Type: application/json
+
+
+{
+    "email": "beksbeeks03@gmail.com",
+    "password": "password"
+}
